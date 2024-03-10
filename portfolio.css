@@ -217,7 +217,7 @@ footer {
         margin-left: 0 auto; /* Ajusta a margem esquerda do conteúdo principal */
     }
 
-    p {
+    .introduction {
         display: none;
 
     }
