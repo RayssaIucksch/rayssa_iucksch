@@ -219,4 +219,8 @@ footer {
         position: static;
         text-align: center;
     }
+
+    .principal {
+        text-align: center;
+    }
 }
