@@ -215,7 +215,7 @@ footer {
 
 
     section {
-        margin-left: 20px; /* Ajusta a margem esquerda do conteúdo principal */
+        margin-left: 0px; /* Ajusta a margem esquerda do conteúdo principal */
         position: static;
         text-align: left;
     }
