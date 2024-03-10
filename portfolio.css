@@ -215,13 +215,13 @@ footer {
 
 
     section {
-        margin-left: 10px; /* Ajusta a margem esquerda do conteúdo principal */
+        margin-left: 20px; /* Ajusta a margem esquerda do conteúdo principal */
         position: static;
         text-align: left;
     }
 
     .principal {
-        text-align: left;
+        margin-left: 20px;
         position: static;
     }
 
