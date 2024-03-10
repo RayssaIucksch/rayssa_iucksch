@@ -214,11 +214,11 @@ footer {
 
 
     section {
-        margin-left: 10px; /* Ajusta a margem esquerda do conteúdo principal */
+        margin-left: 0 auto; /* Ajusta a margem esquerda do conteúdo principal */
     }
 
     p {
-        margin-left: 0 auto;
+        display: none;
 
     }
 
