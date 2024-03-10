@@ -212,18 +212,18 @@ footer {
         display: none; /* Remove o botão voltar */
     }
 
-    aside {
-        position: static; /* Remove a posição fixa do aside */
-        margin-top: 20px; /* Adiciona uma margem superior */
-        text-align: center; /* Centraliza o conteúdo do aside */
-    }
-
-    .profile-image {
-        width: 200px; /* Reduz o tamanho da imagem do perfil */
-        height: 200px; /* Reduz o tamanho da imagem do perfil */
-    }
 
     section {
-        margin-left: 20px; /* Ajusta a margem esquerda do conteúdo principal */
+        margin-left: 10px; /* Ajusta a margem esquerda do conteúdo principal */
     }
+
+    p {
+        margin-left: 10px;
+
+    }
+
+    .principal {
+        margin-left: 10px;
+    }
+
 }
