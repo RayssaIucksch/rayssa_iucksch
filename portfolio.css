@@ -227,15 +227,15 @@ footer {
 
     p {
         font-size: 16px;
-        margin-left: 0;
+        margin-left: 10px;
     }
 
     h1 {
         font-size: 30px;
-        text-align: right;
+        margin-left: 10px;
     }
 
     .project-card {
-        margin: 0 auto;
+        margin: 10px;
     }
 }
