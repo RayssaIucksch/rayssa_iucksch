@@ -1,0 +1,219 @@
+body {
+    background-color: rgb(54, 54, 54);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid; /* Usa um layout de grade para o contêiner */
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: right; 
+    gap: 20px; /* Define o espaço entre os itens do menu */
+    margin-left: auto; /* Alinha o menu à direita */
+
+
+
+}
+
+header {
+    border-bottom: 2px solid #474747;
+    display: flex; /* Usa um layout flexível para o cabeçalho */
+    align-items: center;
+
+}
+
+a:visited {
+    /*Evita que os links fiquem marcados após serem visitados */
+    color: rgb(233, 154, 240);
+}
+
+ul {
+    list-style-type: none;
+
+
+}
+
+li {
+    float: left;
+}
+
+a:link {
+    /* Define o estilo dos links não visitados */
+    text-decoration: none;
+    padding: 8px 16px;
+    color: rgb(233, 154, 240);
+    font-size: large;
+
+
+}
+
+a:hover {
+    /* Define o estilo dos links quando o mouse passa por cima */
+    background-color: rgb(233, 154, 240);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.back-link {
+    /* Estilos para o botão "Voltar" */
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: all 0.3s ease; /* Adiciona uma transição suave para as mudanças de estilo */
+    top: 9px;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.back-link:hover {
+    /* Estilos quando o mouse passa por cima do botão "Voltar" */
+    color: white;
+    border-radius: 10px;
+
+}
+
+.logo {
+    margin-left: 50%;
+}
+
+.side-buttons {
+    /* Estilos para os botões laterais das redes sociais */
+    position: fixed;
+    top: 50%; /*Posiciona os botões laterais na vertical no centro */
+    left: 20px; /*Distância da borda esquerda*/
+    transform: translate(-50%); /*Ajuste que centraliza verticalmente */
+    z-index: 999; /*Garante que os botões estejam sempre na frente de outros elementos */
+}
+
+.side-buttons a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    /* Estilos para a imagem de perfil */
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /*Faz uma sombra na imagem */
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /*Evita que a imagem fique distorcida */
+    margin-top: 50px;
+
+
+}
+
+aside {
+    /* Estilos para a barra lateral */
+    position: fixed;
+    top: 50px;
+    left: 60px;
+}
+
+
+section {
+    margin-left: 60px;  /* Define a margem esquerda do conteúdo principal */
+}
+
+h1 {
+    margin-top: 70px;
+    color: rgb(233, 154, 240);
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+p {
+    margin-left: 50px;
+    text-align: justify;
+    margin-right: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+.project-card {
+    /* Estilos para os cards de projeto */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.project-card h2 {
+    /* Estilos para o título do card de projeto */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    /* Estilos para o texto do card de projeto */
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    /* Estilos para os links no card de projeto */
+    color: #e99af0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    /* Estilos para os links no card de projeto quando o mouse passa por cima */
+    color: white;
+}
+
+
+
+footer {
+    background-color: #474747;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+
+
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 768px) {
+    .menu {
+        grid-column: span 12; /* Define o menu para ocupar todas as 12 colunas em telas pequenas */
+        justify-content: center; /* Centraliza os itens do menu */
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .logo {
+        display: none; /* Remove o ícone da logo */
+
+    }
+
+    .back-link {
+        display: none; /* Remove o botão voltar */
+    }
+
+
+    section {
+        margin-left: 20px; /* Ajusta a margem esquerda do conteúdo principal */
+    }
+}

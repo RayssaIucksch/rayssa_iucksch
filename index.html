@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayssa Taborda Iucksch</title>
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS de formatação -->
+    <link rel="icon" href="Imagens/formato-html.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img src="Imagens/formato-html.png" class="logo">
+        <nav class="container menu"> <!--Menu de navegação principal com os 4 links exigidos-->
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="back-link" onclick="goBack()">Voltar</a><!--Botão responsável por retornar para a página anterior.-->
+
+    </header>
+
+    <div class="side-buttons"> <!--Botões laterais com os ícones das redes sociais que levam as redes sociais-->
+        <a href="https://www.linkedin.com/in/lara-tabsch/" target="_blank">
+            <img src="Imagens/linkedin.png">
+        </a>
+
+        <a href="https://github.com/RayssaIucksch" target="_blank">
+            <img src="Imagens/github.png">
+        </a>
+
+        <a href="mailto:cadastrosrayssa@gmail.com" target="_blank">
+            <img src="Imagens/o-email.png">
+        </a>
+
+    </div>
+    <div class="container wrapper"> <!--container wrapper para depois deixar a página responsiva-->
+        <aside>
+            <div class="profile-container"> 
+
+                <img src="Imagens/IMG_20240309_153108.jpg" alt="Minha foto" class="profile-image">
+
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>
+                Sejam bem vindos! <br>
+                Me chamo Rayssa Taborda Iucksch <br>
+            </h1>
+            <p>
+                Também conhecida como Lara, tenho 20 anos, sou de Curitiba-PR e
+                sou uma entusiasta da tecnologia apaixonada por criar soluções criativas. Adoro aprender coisas
+                novas, ler livros e assistir doramas. Estou sempre aberta a novas ideias e adoro colaborar com as
+                pessoas ao meu redor. Estou ansiosa para contribuir para projetos que façam a diferença no mundo, e
+                para ter minha primeira experiência na área de programação!
+            </p>
+        </section>
+    </div>
+    <footer class="container">
+        <h3>© 2024 Rayssa Taborda Iucksch</h3>
+
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Função responsável por fazer o botão "voltar" retornar para a página anterior no histórico do navegador do usuário.
+        }
+    </script>
+</body>
+
+</html>

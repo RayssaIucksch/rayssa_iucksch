@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayssa Taborda Iucksch</title>
+    <link rel="stylesheet" href="portfolio.css"> <!-- Importa o arquivo CSS de formatação -->
+    <link rel="icon" href="Imagens/formato-html.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img src="Imagens/formato-html.png" class="logo">
+        <nav class="container menu"> <!--Menu principal com os 4 links exigidos-->
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="back-link" onclick="goBack()">Voltar</a><!--Botão responsável por retornar para a página anterior.-->
+
+    </header>
+
+    <div class="side-buttons"> <!--Botões laterais com os ícones das redes sociais-->
+        <a href="https://www.linkedin.com/in/lara-tabsch/" target="_blank">
+            <img src="Imagens/linkedin.png">
+        </a>
+
+        <a href="https://github.com/RayssaIucksch" target="_blank">
+            <img src="Imagens/github.png">
+        </a>
+
+        <a href="mailto:cadastrosrayssa@gmail.com" target="_blank">
+            <img src="Imagens/o-email.png">
+        </a>
+
+    </div>
+    <div class="container wrapper">
+         <!-- Seção do portfólio -->
+        <section class="principal">
+            <h1>
+                Portfólio
+            </h1>
+            <p>
+                Segue abaixo alguns pequenos projetos que já fiz:
+            </p>
+        </section>
+        <!-- Cards de projeto -->
+        <section class="project-card">
+            <h2>Protótipo de Alta Fidelidade do Aplicativo Enjoei</h2>
+            <p>⦁	Protótipo de Alta Fidelidade para um aplicativo de compras desenvolvido como parte da atividade prática de Design de Interação da faculdade de ADS.
+            <br>
+                ⦁	O aplicativo selecionado para prototipagem é o "Enjoei", uma plataforma de compra e venda de produtos novos, usados e seminovos. Algumas adaptações foram incorporadas para facilitar a experiência do usuário no contexto do protótipo.
+                </p>
+            <a href="https://www.figma.com/proto/BP4uVEOoZuAffhx6yfWUER/Prot%C3%B3tipo-Alta-Fidelidade---App-Enjoei?type=design&node-id=75-2547&t=NoEP3s72n2OqGBPT-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=75%3A2547&mode=design">Ver detalhes</a>
+        </section>
+        <section class="project-card">
+            <h2>Jogo de Adivinhação - Programa Desenvolve Grupo Boticário</h2>
+            <p>⦁ Este jogo é um projeto simples desenvolvido como parte do Programa Desenvolve do Grupo Boticário. O objetivo deste jogo é educacional, proporcionando uma introdução ao desenvolvimento web e lógica de programação com JavaScript e HTML.</p>
+            <a href="https://github.com/RayssaIucksch/Jogo_Adivinha">Ver detalhes</a>
+        </section>
+        <section class="project-card">
+            <h2>Protótipo de baixa e média fidelidade: aplicativo de lista de tarefas</h2>
+            <p> ⦁ Interface de um aplicativo, para celular, de lista de tarefas 
+                simples. O objetivo do aplicativo é permitir que os usuários criem uma lista de tarefas, marquem 
+                como concluídas, excluam e editem tarefas.</p>
+            <a href="Projetos/Task List - baixa e média fidelidade.pdf" download>Ver detalhes</a>
+        </section>
+    </div>
+    <footer class="container">
+        <h3>© 2024 Rayssa Taborda Iucksch</h3>
+
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Função responsável por fazer o botão "voltar" retornar para a página anterior no histórico do navegador do usuário.
+        }
+    </script>
+</body>
+
+</html>

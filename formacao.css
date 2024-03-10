@@ -1,0 +1,287 @@
+body {
+    background-color: rgb(54, 54, 54);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid; /* Usa um layout de grade para o contêiner */
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: right;
+    gap: 20px;  /* Define o espaço entre os itens do menu */
+    margin-left: auto; /* Alinha o menu à direita */
+
+
+
+}
+
+header {
+    border-bottom: 2px solid #474747;
+    display: flex; /* Usa um layout flexível para o cabeçalho */
+    align-items: center;
+
+}
+
+a:visited {
+    /*Evita que os links fiquem marcados após serem visitados */
+    color: rgb(233, 154, 240);
+}
+
+ul {
+    list-style-type: none;
+
+
+}
+
+li {
+    float: left;
+}
+
+a:link {
+    /* Define o estilo dos links não visitados */
+    text-decoration: none;
+    padding: 8px 16px;
+    color: rgb(233, 154, 240);
+    font-size: large;
+
+
+}
+
+a:hover {
+    /* Define o estilo dos links quando o mouse passa por cima */
+    background-color: rgb(233, 154, 240);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.back-link {
+    /* Estilos para o botão "Voltar" */
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: all 0.3s ease; /* Adiciona uma transição suave para as mudanças de estilo */
+    top: 9px;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.back-link:hover {
+    /* Estilos quando o mouse passa por cima do botão "Voltar" */
+    color: white;
+    border-radius: 10px;
+
+}
+
+.logo {
+    margin-left: 50%;
+}
+
+.side-buttons {
+    /* Estilos para os botões laterais das redes sociais */
+    position: fixed;
+    top: 50%; /*Posiciona os botões laterais na vertical no centro */
+    left: 20px; /*Distância da borda esquerda*/
+    transform: translate(-50%); /*Ajuste que centraliza verticalmente */
+    z-index: 999; /*Garante que os botões estejam sempre na frente de outros elementos */
+}
+
+.side-buttons a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    /* Estilos para a imagem de perfil */
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /*Faz uma sombra na imagem */
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /*Evita que a imagem fique distorcida */
+    margin-top: 50px;
+
+
+}
+
+aside {
+    /* Estilos para a barra lateral */
+    position: fixed;
+    top: 50px;
+    left: 60px;
+}
+
+.profile-container {
+    /* Estilos para o contêiner do perfil */
+    display: flex;
+    align-items: start;
+
+}
+
+section {
+    margin-left: 450px; /* Define a margem esquerda do conteúdo principal */
+}
+
+h1 {
+    margin-top: 20px;
+    color: rgb(233, 154, 240);
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+h2 {
+    color: rgb(233, 154, 240);
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+
+p {
+    margin-left: 50px;
+    text-align: justify;
+    margin-right: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.languages {
+    margin-left: 10px;
+    text-align: justify;
+    margin-right: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+footer {
+    background-color: #474747;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+
+
+}
+
+/* Estilos para dispositivos móveis */
+
+@media screen and (max-width: 768px) {
+    header {
+        /* Estilos para o cabeçalho em dispositivos móveis */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back-link {
+        display: none;  /* Remove o botão voltar */
+
+    }
+
+    .logo {
+        display: none; /* Remove o ícone da logo */
+
+    }
+
+    .container {
+        /* Ajusta o layout da grade para dispositivos móveis */
+        grid-template-columns: auto; /* Define uma única coluna */
+    }
+
+    .menu {
+        /* Ajusta o layout do menu para dispositivos móveis */
+        grid-column: span 12; /* Ocupa todas as 12 colunas */
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .profile-container {
+        /* Ajusta a posição do perfil para dispositivos móveis */
+        margin-left: 0;
+    }
+
+    section {
+        /* Ajusta a margem esquerda do conteúdo principal para dispositivos móveis */
+        margin-left: 20px;
+    }
+
+    h1, h2, p, .languages {
+         /* Ajusta as margens de títulos, parágrafos e itens de idioma para dispositivos móveis */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .profile-image {
+        width: 200px; /* Reduz o tamanho da imagem do perfil */
+        height: 200px; /* Reduz o tamanho da imagem do perfil */
+    }
+
+    aside {
+        position: static; /* Remove a posição fixa do aside */
+        margin-top: 20px; /* Adiciona uma margem superior */
+        text-align: center; /* Centraliza o conteúdo do aside */
+    }
+
+    footer {
+        position: relative;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para dispositivos móveis menores, como smartphones em modo retrato */
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 20px 0;
+    }
+
+    .container {
+        grid-template-columns: auto;
+    }
+
+    .menu {
+        grid-column: span 12;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .profile-container {
+        margin-left: 0;
+    }
+
+    section {
+        margin-left: 20px;
+    }
+
+    h1, h2, p, .languages {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: auto;
+        max-width: 250px; /* Reduzindo um pouco mais o tamanho da imagem */
+    }
+}

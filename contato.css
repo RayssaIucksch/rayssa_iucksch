@@ -1,0 +1,234 @@
+body {
+    background-color: rgb(54, 54, 54);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid; /* Usa um layout de grade para o contêiner */
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: right;
+    gap: 20px;  /* Define o espaço entre os itens do menu */
+    margin-left: auto; /* Alinha o menu à direita */
+
+
+
+}
+
+header {
+    border-bottom: 2px solid #474747;
+    display: flex; /* Usa um layout flexível para o cabeçalho */
+    align-items: center;
+
+}
+
+a:visited {
+    /*Evita que os links fiquem marcados após serem visitados */
+    color: rgb(233, 154, 240);
+}
+
+ul {
+    list-style-type: none;
+
+
+}
+
+li {
+    float: left;
+}
+
+a:link {
+    /* Define o estilo dos links não visitados */
+    text-decoration: none;
+    padding: 8px 16px;
+    color: rgb(233, 154, 240);
+    font-size: large;
+
+
+}
+
+a:hover {
+    /* Define o estilo dos links quando o mouse passa por cima */
+    background-color: rgb(233, 154, 240);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.back-link {
+    /* Estilos para o botão "Voltar" */
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: all 0.3s ease; /* Adiciona uma transição suave para as mudanças de estilo */
+    top: 9px;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.back-link:hover {
+    /* Estilos quando o mouse passa por cima do botão "Voltar" */
+    color: white;
+    border-radius: 10px;
+
+}
+
+.logo {
+    margin-left: 50%;
+}
+
+.side-buttons {
+    /* Estilos para os botões laterais das redes sociais */
+    position: fixed;
+    top: 50%; /*Posiciona os botões laterais na vertical no centro */
+    left: 20px; /*Distância da borda esquerda*/
+    transform: translate(-50%); /*Ajuste que centraliza verticalmente */
+    z-index: 999; /*Garante que os botões estejam sempre na frente de outros elementos */
+}
+
+.side-buttons a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    /* Estilos para a imagem de perfil */
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /*Faz uma sombra na imagem */
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /*Evita que a imagem fique distorcida */
+    margin-top: 50px;
+
+
+}
+
+aside {
+    /* Estilos para a barra lateral */
+    position: fixed;
+    top: 50px;
+    left: 60px;
+}
+
+.profile-container {
+    /* Estilos para o contêiner do perfil */
+    display: flex;
+    align-items: start;
+
+}
+
+section {
+    margin-left: 450px; /* Define a margem esquerda do conteúdo principal */
+}
+
+
+h1 {
+    margin-top: 30px;
+    color: rgb(233, 154, 240);
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.form {
+    /* Estilos para o formulário de contato */
+    margin-left: 50px;
+    text-align: justify;
+    margin-right: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.social {
+    /* Estilos para as informações sociais */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    /* Estilos para o botão de envio do formulário */
+    background-color: rgb(233, 154, 240);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15%;
+    padding: 5px;
+}
+
+footer {
+    background-color: #474747;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+
+
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 768px) {
+    .menu {
+        grid-column: span 12;
+        /* Define o menu para ocupar todas as 12 colunas em telas pequenas */
+        justify-content: center;
+        /* Centraliza os itens do menu */
+        margin-left: 0;
+        /* Remove a margem esquerda */
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .logo {
+        display: none; /* Remove o ícone da logo */
+
+    }
+
+    .back-link {
+        display: none; /* Remove o botão voltar */
+    }
+
+    aside {
+        position: static; /* Remove a posição fixa do aside */
+        margin-top: 20px; /* Adiciona uma margem superior */
+        text-align: center; /* Centraliza o conteúdo do aside */
+    }
+
+    .profile-image {
+        width: 200px; /* Reduz o tamanho da imagem do perfil */
+        height: 200px; /* Reduz o tamanho da imagem do perfil */
+    }
+
+    section {
+        margin-left: 20px; /* Ajusta a margem esquerda do conteúdo principal */
+    }
+}
+
+/* Estilos para telas muito pequenas, como smartphones em modo retrato */
+@media screen and (max-width: 480px) {
+    .menu {
+        font-size: 14px; /* Reduz o tamanho da fonte do menu */
+    }
+
+    h1 {
+        font-size: 30px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .form {
+        font-size: 16px; /* Reduz o tamanho da fonte do texto */
+    }
+}

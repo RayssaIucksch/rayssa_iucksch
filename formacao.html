@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayssa Taborda Iucksch</title>
+    <link rel="stylesheet" href="formacao.css"> <!-- Importa o arquivo CSS de formatação -->
+    <link rel="icon" href="Imagens/formato-html.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img src="Imagens/formato-html.png" class="logo">
+        <nav class="container menu"> <!--Menu principal com os 4 links exigidos-->
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="back-link" onclick="goBack()">Voltar</a><!--Botão responsável por retornar para a página anterior.-->
+
+    </header>
+
+    <div class="side-buttons"> <!--Botões laterais com os ícones das redes sociais-->
+        <a href="https://www.linkedin.com/in/lara-tabsch/" target="_blank">
+            <img src="Imagens/linkedin.png">
+        </a>
+
+        <a href="https://github.com/RayssaIucksch" target="_blank">
+            <img src="Imagens/github.png">
+        </a>
+
+        <a href="mailto:cadastrosrayssa@gmail.com" target="_blank">
+            <img src="Imagens/o-email.png">
+        </a>
+
+    </div>
+    <div class="container wrapper">
+        <aside>
+            <div class="profile-container">
+
+                <img src="Imagens/IMG_20240309_153108.jpg" alt="Minha foto" class="profile-image">
+
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>
+                Minha formação<br>
+            </h1>
+            <p>
+                Atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNINTER, e estou participando do
+                Programa Desenvolve do Grupo Boticário na área de Dados. Possuo também certificação do Bootcamp Santander - Backend em
+                Java pela DIO, Excel e PostgreSQL pela Alura.
+            </p>
+            <div>
+                <h2>
+                    Idiomas:
+                </h2>
+                <ul>
+                    <li class="languages">
+                        Português - Brasil: Nativo;
+                    </li>
+                    <li class="languages">
+                        Inglês: Intermediário B2;
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <div>
+                <h2>
+                    Certificados:
+                </h2>
+                <p>Segue abaixo alguns certificados:</p>
+                <div class="certificate">
+                    <ul>
+                        <!-- Links para os certificados com atributo "download" para forçar o download -->
+                        <li><a href="Certificados/Rayssa Taborda Iucksch - Curso Git e GitHub_ compartilhando e colaborando em projetos - Alura.pdf"
+                                download>Git e Github</a></li>
+                        <li><a href="Certificados/Rayssa Taborda Iucksch - Curso JavaScript e HTML_ desenvolva um jogo e pratique lógica de programação - Alura.pdf"
+                                dowload>JavaScript e HTML</a></li>
+                        <li><a href="Certificados/Rayssa Taborda Iucksch - Certificado Backend Java.pdf" download>Backend Java</a></li>
+                        <li><a href="Certificados/Rayssa Taborda Iucksch - Curso Excel_ domine o editor de planilhas - Alura.pdf" download>Excel</a></li>
+                        <li><a href="Certificados/Rayssa Taborda Iucksch - Curso PostgreSQL - Alura.pdf" download>PostgreSQL</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer class="container">
+        <h3>© 2024 Rayssa Taborda Iucksch</h3>
+
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Função responsável por fazer o botão "voltar" retornar para a página anterior no histórico do navegador do usuário.
+        }
+    </script>
+</body>
+
+</html>

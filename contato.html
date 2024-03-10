@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayssa Taborda Iucksch</title>
+    <link rel="stylesheet" href="contato.css"> <!-- Importa o arquivo CSS de formatação -->
+    <link rel="icon" href="Imagens/formato-html.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img src="Imagens/formato-html.png" class="logo">
+        <nav class="container menu"> <!--Menu principal com os 4 links exigidos-->
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="back-link" onclick="goBack()">Voltar</a><!--Botão responsável por retornar para a página anterior.-->
+
+    </header>
+
+    <div class="side-buttons"> <!--Botões laterais com os ícones das redes sociais-->
+        <a href="https://www.linkedin.com/in/lara-tabsch/" target="_blank">
+            <img src="Imagens/linkedin.png">
+        </a>
+
+        <a href="https://github.com/RayssaIucksch" target="_blank">
+            <img src="Imagens/github.png">
+        </a>
+
+        <a href="mailto:cadastrosrayssa@gmail.com" target="_blank">
+            <img src="Imagens/o-email.png">
+        </a>
+
+    </div>
+    <div class="container wrapper">
+        <aside>
+            <div class="profile-container">
+
+                <img src="Imagens/IMG_20240309_153108.jpg" alt="Minha foto" class="profile-image">
+
+            </div>
+        </aside>
+        <section>
+            <h1>Entre em contato <img src="Imagens/contact-us.png"></h1>
+            <div class="form">
+                <!-- Formulário de contato -->
+                <form>
+                    <div>
+                        <!-- Campo de entrada para o nome -->
+                        <label for="nome">
+                            Nome:
+                        </label>
+                        <input type="text" id="nome" name="nome" style="margin-left: 17px;">
+                    </div>
+                    <div>
+                        <!-- Campo de entrada para o email -->
+                        <label for="email">
+                            Email:
+                        </label>
+                        <input type="email" id="email" name="email" style="margin-left: 22px;">
+                    </div>
+                    <div>
+                        <!-- Campo de entrada para a mensagem -->
+                        <label for="mensagem">
+                            Digite sua mensagem:
+                        </label>
+                        <br>
+                        <textarea id="mensagem" name="mensagem" rows="8" cols="40"></textarea>
+                    </div>
+                    <div>
+                        <!-- Botão de envio do formulário -->
+                        <button>
+                            Enviar
+                        </button>
+                    </div>
+                    <div>
+                        <!-- Informações de contato adicionais -->
+                        <p class="social">
+                            LinkedIn: <a href="https://www.linkedin.com/in/lara-tabsch/"
+                                style="font-size: 20px; font-weight: bold;">@Lara Tabsch</a>
+                        </p>
+                        <p class="social">
+                            GitHub: <a href="https://github.com/RayssaIucksch"
+                                style="font-size: 20px; font-weight: bold;">@RayssaIucksch</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+
+    </div>
+    <footer class="container">
+        <h3>© 2024 Rayssa Taborda Iucksch</h3>
+
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Função responsável por fazer o botão "voltar" retornar para a página anterior no histórico do navegador do usuário.
+        }
+    </script>
+</body>
+
+</html>
