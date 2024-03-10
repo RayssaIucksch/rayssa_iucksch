@@ -233,4 +233,8 @@ footer {
         font-size: 30px;
         text-align: right;
     }
+
+    .project-card {
+        margin: 0 auto;
+    }
 }
